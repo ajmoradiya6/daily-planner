@@ -1,0 +1,129 @@
+/* || VARIABLES */
+:root {
+  --light: #ededed;
+  --light-red: #e0a59f;
+  --alt: #1f2833;
+  --alt2: #cee072;
+  --alt3: #89b0e0;
+  --transition: all 0.2s ease-in-out;
+}
+
+/* || RESETS */
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  background-color: var(--light);
+}
+
+/* || CUSTOM STYLES */
+.jumbotron {
+  background-color: var(--alt);
+  color: var(--light);
+  margin: 0px;
+  border-radius: 0px;
+}
+
+.jumbotron p {
+  color: var(--light);
+}
+
+.saveAlertWrap {
+  background-color: var(--light-red);
+}
+
+.saveAlertWrap p {
+  color: var(--alt);
+  height: 6vw;
+}
+
+.hide {
+  display: none;
+}
+
+.row {
+  white-space: pre-wrap;
+}
+
+.col,
+.col-1,
+.col-9 {
+  padding: 0;
+  height: 8vh;
+  background-color: var(--alt);
+}
+
+.hour {
+  color: var(--light);
+}
+
+.description {
+  white-space: pre-wrap;
+  border: 1px solid var(--alt);
+  resize: none;
+}
+
+.description:focus {
+  outline: 1px solid transparent;
+  border: 2px solid var(--alt);
+}
+
+.description:hover {
+  background-color: var(--light);
+  transition: var(--transition);
+}
+
+.past {
+  color: var(--alt);
+  background-color: var(--light-red);
+}
+
+.present {
+  background-color: var(--alt3);
+  color: var(--alt);
+}
+
+.future {
+  background-color: var(--alt2);
+  color: var(--alt);
+}
+
+.saveBtn {
+  border-style: none;
+  border-radius: 0px;
+  background-color: var(--alt);
+  color: var(--light);
+  font-size: 1.5vw;
+}
+
+.saveBtn:focus {
+  outline: transparent;
+}
+
+.saveBtn:active {
+  scale: 0.95;
+  transition: var(--transition);
+}
+
+.saveBtn:hover {
+  background-color: var(--alt3);
+  transition: var(--transition);
+  border-right: var(--alt) 1px solid;
+  border-top: var(--alt) 1px solid;
+  border-bottom: var(--alt) 1px solid;
+}
+
+.saveBtn:hover i {
+  transition: var(--transition);
+  color: var(--alt);
+  scale: 1.2;
+}
+
+footer {
+  background-color: var(--alt);
+  color: var(--light);
+}
+
+footer p {
+  margin: 0px;
+}
